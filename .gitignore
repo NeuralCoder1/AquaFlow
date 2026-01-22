@@ -1,0 +1,44 @@
+# =========================
+# Python Runtime Artifacts
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# =========================
+# ML / Data Science
+# =========================
+*.ipynb_checkpoints
+.ipynb_checkpoints/
+model_training/.ipynb_checkpoints/
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# OS & Editor Noise
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+
+# =========================
+# Logs & Temp Files
+# =========================
+*.log
+tmp/
+temp/
+
+# =========================
+# Render / Deployment
+# =========================
+render.yaml
