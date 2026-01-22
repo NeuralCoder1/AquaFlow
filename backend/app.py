@@ -3,7 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 import os
 
-from utils.predictor import predict_leak
+from backend.utils.predictor import predict_leak
 from utils.wireframe import generate_wireframe
 
 app = Flask(__name__)
