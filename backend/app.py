@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 from backend.utils.predictor import predict_leak
-from utils.wireframe import generate_wireframe
+from backend.utils.wireframe import generate_wireframe
 
 app = Flask(__name__)
 CORS(app)
