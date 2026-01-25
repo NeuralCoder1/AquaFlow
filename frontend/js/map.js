@@ -4,6 +4,9 @@ let pipeLines = {};          // location_code -> polyline
 let activeLine = null;      // currently highlighted pipe
 let highlightedMarker = null;
 
+// 🔑 API base auto-resolves (localhost OR Render)
+const API_BASE = `${window.location.origin}/api`;
+
 // ================= INIT MAP =================
 function initMap() {
     map = L.map("map").setView([25.2048, 55.2708], 11);
@@ -17,7 +20,7 @@ function initMap() {
 
 // ================= LOAD WIREFRAME =================
 function loadWireframe() {
-    fetch("http://127.0.0.1:5000/api/wireframe")
+    fetch(`${API_BASE}/wireframe`)
         .then(res => res.json())
         .then(data => {
             const palette = [
