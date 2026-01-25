@@ -1,5 +1,5 @@
 // ================= API CONFIG =================
-const API_BASE = "/api";
+const API_BASE = "https://aquaflow-hi9v.onrender.com/api";
 
 // ================= EVENT LISTENER =================
 document.getElementById("checkLeakBtn").addEventListener("click", () => {
