@@ -23,7 +23,7 @@ pipe_df = pd.read_csv(DATA_PATH)
 def serve_frontend():
     return app.send_static_file("index.html")
 # ================= WIREFRAME =================
-@app.route("/api/wireframe", methods=["GET"])
+@app.route("/api/wireframe")
 def wireframe():
     connections = generate_wireframe(pipe_df)
     return jsonify(connections)
