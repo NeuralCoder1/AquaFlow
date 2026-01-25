@@ -6,7 +6,11 @@ import os
 from backend.utils.predictor import predict_leak
 from backend.utils.wireframe import generate_wireframe
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_folder="../frontend",
+    static_url_path=""
+)
 CORS(app)
 
 BASE_DIR = os.path.dirname(__file__)
@@ -14,7 +18,10 @@ DATA_PATH = os.path.join(BASE_DIR, "data", "pipe_locations.csv")
 
 # Load pipe location data once
 pipe_df = pd.read_csv(DATA_PATH)
-
+# ================= FRONTEND =================
+@app.route("/")
+def serve_frontend():
+    return app.send_static_file("index.html")
 # ================= WIREFRAME =================
 @app.route("/api/wireframe", methods=["GET"])
 def wireframe():
