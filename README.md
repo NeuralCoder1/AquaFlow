@@ -3,9 +3,8 @@
 A smart city–oriented **2D GIS dashboard** for **underground water leakage detection** using
 **Machine Learning (Isolation Forest)** and **interactive map visualization**.
 
----
 
-## 🚀 Features
+## Features
 
 - 2D GeoMap (Dubai region)
 - Underground water pipe wireframe
@@ -21,7 +20,7 @@ A smart city–oriented **2D GIS dashboard** for **underground water leakage det
 
 ---
 
-## 🧠 ML Model
+##  ML Model
 
 - Algorithm: **Isolation Forest**
 - Input Features:
@@ -37,7 +36,7 @@ A smart city–oriented **2D GIS dashboard** for **underground water leakage det
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 water_leakage_dashboard/
 ├── backend/
